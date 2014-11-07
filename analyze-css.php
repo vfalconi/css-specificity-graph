@@ -15,6 +15,7 @@
 	/*
 	*
 	*	Find and remove all media query blocks from the CSS to be graphed
+	* From http://stackoverflow.com/questions/14145620/regular-expression-for-media-queries-in-css
 	*
 	*/
 
@@ -69,6 +70,7 @@
 	/*
 	*
 	* get selectors by definition
+	* from: http://www.bewebmaster.com/228.php
 	*
 	*/
 
