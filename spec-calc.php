@@ -3,10 +3,12 @@
     function specificity($selector) {
 
         // Pseudo classes
-        $classes = array(":link", ":visited", ":hover", ":active", ":focus", ":target", ":lang", ":enabled",
-            ":disabled", ":checked", ":indeterminate", ":root", ":nth-child", ":nth-last-child",
-            ":nth-of-type", ":nth-last-of-type", ":first-child", ":last-child", ":first-of-type",
-            ":last-of-type", ":only-child", ":only-of-type", ":empty", ":contains", ":not");
+        $classes = array(":active", ":checked", ":default", ":dir()", ":disabled", ":empty", ":enabled", 
+            ":first", ":first-child", ":first-of-type", ":fullscreen", ":focus", ":hover", ":indeterminate", 
+            ":in-range", ":invalid", ":lang()", ":last-child", ":last-of-type", ":left", ":link", ":not()", 
+            ":nth-child()", ":nth-last-child()", ":nth-last-of-type()", ":nth-of-type()", ":only-child", 
+            ":only-of-type", ":optional", ":out-of-range", ":read-only", ":read-write", ":required", ":right", 
+            ":root", ":scope", ":target", ":valid", ":visited");
         // Pseudo elements
         $elements = array(":before", ":after", ":first-line", ":first-letter", ":selection");
         // HTML tags
