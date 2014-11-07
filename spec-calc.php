@@ -12,16 +12,16 @@
         // Pseudo elements
         $elements = array(":before", ":after", ":first-line", ":first-letter", ":selection");
         // HTML tags
-        $tags = array("a", "abbr", "acronym", "address", "applet", "area", "b", "base", "basefont", "bgsound",
-            "bdo", "big", "blink", "blockquote", "body", "br", "button", "caption", "center", "cite",
-            "code", "col", "colgroup", "comment", "dd", "del", "dfn", "dir", "div", "dl", "dt", "em",
-            "embed", "fieldset", "font", "form", "frame", "frameset", "h", "h1", "h2", "h3", "h4", "h5",
-            "h6", "head", "hr", "html", "i", "iframe", "img", "input", "ins", "isindex", "kbd", "label",
-            "legend", "li", "link", "listing", "map", "marquee", "menu", "meta", "multicol", "nextid",
-            "nobr", "noframes", "noscript", "object", "ol", "optgroup", "option", "p", "param", "plaintext",
-            "pre", "q", "s", "samp", "script", "select", "server", "small", "sound", "spacer", "span",
-            "strike", "strong", "style", "sub", "sup", "table", "tbody", "td", "textarea", "textflow",
-            "tfoot", "th", "thead", "title", "tr", "tt", "u", "ul", "var", "wbr", "xmp");
+        $tags = array("a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", 
+            "blockquote", "body", "br", "button", "canvas", "caption", "cite", "code", "col", "colgroup", 
+            "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "div", "dl", 
+            "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", 
+            "h5", "h6", "head", "header", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "keygen", 
+            "label", "legend", "li", "link", "main", "map", "mark", "menu", "menuitem", "meta", "meter", "nav", 
+            "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", 
+            "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", 
+            "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "textarea", "tfoot", "th", "thead", 
+            "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr");
 
         // Strip slashes
         $data = preg_replace("/\/\\*[\\s\\S]*?\\*\//", "", $selector);      // Strip comments
