@@ -134,7 +134,10 @@
 		}
 	}
 
+	if (!$included)
+	{
 	echo json_encode($chart_data);
+	}
 
 	// TODO: account for !important flags -- include css definitions in chart data?	
 	
