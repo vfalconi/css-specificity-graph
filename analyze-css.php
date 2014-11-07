@@ -126,7 +126,7 @@
 			if (trim($v) != '')
 			{
 				$chart_data[] = array(
-					'position' => $position,
+					'position' => $position + 1,
 					'selector' => $v,
 					'specificity' => specificity($v)
 				);
@@ -136,7 +136,7 @@
 
 	if (!$included)
 	{
-	echo json_encode($chart_data);
+		echo json_encode($chart_data);
 	}
 
 	// TODO: account for !important flags -- include css definitions in chart data?	
