@@ -1,3 +1,7 @@
+<?php
+	$included = true;
+	require_once('analyze-css.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +24,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				
+				<?php
+					foreach ($chart_data as $index => $row_data)
+					{
+						echo '<tr>
+							<td class="spec-table-cell">' . $row_data['position'] . '</td>
+							<td class="spec-table-cell">' . $row_data['selector'] . '</td>
+							<td class="spec-table-cell">' . $row_data['specificity'] . '</td>
+						</tr>';
+					}
+				?>
 			</tbody>
 		</table>
 	</div>
