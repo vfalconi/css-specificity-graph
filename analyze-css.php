@@ -1,5 +1,15 @@
 <?php
 
+	if (!isset($_GET['included']))
+	{
+		$included = true;
+	}
+	else
+	{
+		header('Content-type: text/plain');
+		$included = false;
+	}
+
 	require_once('spec-calc.php');
 
 	$css_contents = file_get_contents('styles.min.css');
@@ -134,10 +144,11 @@
 		}
 	}
 
-	if (!$included)
+	if ($included == false)
 	{
 		echo json_encode($chart_data);
 	}
+	
 
 	// TODO: account for !important flags -- include css definitions in chart data?	
 	
