@@ -44,7 +44,7 @@ d3.json('./analyze-css.php?included=false', function (error, data) {
 	var lineFunc = d3.svg.line()
 		.x(function(d) { return xRange(d.position); })
 		.y(function(d) { return yRange(d.score); })
-		.interpolate('linear');
+		.interpolate('basis');
 
 	chart.append('svg:path')
 		.attr('d', lineFunc(data))
