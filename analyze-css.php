@@ -14,11 +14,9 @@
 
 	$css_contents = file_get_contents('styles.min.css');
 
-	/* 
-		
+	/* 		
 		Remove any sourcemaps at the end of the file... because you're including 
 		sourcemaps, right?
-
 	*/
 	$css_contents = preg_replace('/\/\*([A-Za-z0-9\-\=\.\#\s\!\|\/]+)\*\//', '', $css_contents);
 
