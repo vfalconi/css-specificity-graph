@@ -138,7 +138,7 @@
 				$chart_data[] = array(
 					'position' => $position + 1,
 					'selector' => $v,
-					'specificity' => calculateSpecificity($v)
+					'score' => calculateSpecificity($v)
 				);
 			}
 		}
