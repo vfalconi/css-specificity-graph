@@ -12,11 +12,11 @@ d3.json('./analyze-css.php?included=false', function (error, data) {
 	
 	var xRange = d3.scale.linear()
 		.range([margins.left, width - margins.right])
-		.domain([d3.min(data, function (d) { return d.position; }), d3.max(data, function (d) { return d.position; })]);
+		.domain([0, d3.max(data, function (d) { return d.position; })]);
 	
 	var yRange = d3.scale.linear()
 		.range([height - margins.top, margins.bottom])
-		.domain([d3.min(data, function (d) { return d.score; }), d3.max(data, function (d) { return d.score; })]);
+		.domain([0, d3.max(data, function (d) { return d.score; })]);
 	
 	var xAxis = d3.svg.axis()
 		.scale(xRange)
