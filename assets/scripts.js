@@ -48,7 +48,7 @@ d3.json('./analyze-css.php?included=false', function (error, data) {
 
 	chart.append('svg:path')
 		.attr('d', lineFunc(data))
-		.attr('stroke', 'steelblue')
+		.attr('stroke', '#993D6B')
 		.attr('stroke-width', 2)
 		.attr('fill', 'none');
 });
