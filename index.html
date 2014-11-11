@@ -21,17 +21,17 @@
 				<tr>
 					<th class="spec-table-header">Position</th>
 					<th class="spec-table-header">Selector</th>
-					<th class="spec-table-header">Specificity</th>
+					<th class="spec-table-header">Score</th>
 				</tr>
 			</thead>
 			<tbody>
 				<?php
 					foreach ($chart_data as $index => $row_data)
 					{
-						echo '<tr data-selector-position="' . $row_data['position'] . '" data-selector-selector="' . $row_data['selector'] . '" data-selector-score="' . $row_data['specificity'] . '">
+						echo '<tr data-selector-position="' . $row_data['position'] . '" data-selector-selector="' . $row_data['selector'] . '" data-selector-score="' . $row_data['score'] . '">
 							<td class="spec-table-cell">' . $row_data['position'] . '</td>
 							<td class="spec-table-cell">' . $row_data['selector'] . '</td>
-							<td class="spec-table-cell">' . $row_data['specificity'] . '</td>
+							<td class="spec-table-cell">' . $row_data['score'] . '</td>
 						</tr>';
 					}
 				?>
