@@ -4,7 +4,7 @@ The objective of this project is to take provided CSS, analyze the selectors, an
 
 Just so we're all on the same page, I will misspell "specificity" often and, just as often, not correct it.
 
-Want a demo? [Here you go](https://vincefalconi.com/css-specificity-graph/).
+Want a demo? [Here you go](https://vincefalconi.com/demo/css-specificity-graph/).
 
 ## Requirements
 
