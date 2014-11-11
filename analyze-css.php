@@ -22,6 +22,17 @@
 	*/
 	$css_contents = preg_replace('/\/\*([A-Za-z0-9\-\=\.\#\s\!\|\/]+)\*\//', '', $css_contents);
 
+	// Remove comments
+	// From: http://stackoverflow.com/questions/1581049/preg-replace-out-css-comments
+	$regex = array(
+		"`^([\t\s]+)`ism"=>'',
+		"`^\/\*(.+?)\*\/`ism"=>"",
+		"`([\n\A;]+)\/\*(.+?)\*\/`ism"=>"$1",
+		"`([\n\A;\s]+)//(.+?)[\n\r]`ism"=>"$1\n",
+		"`(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+`ism"=>"\n"
+	);
+	$css_contents = preg_replace(array_keys($regex),$regex,$css_contents);
+
 	/*
 	*
 	*	Find and remove all media query blocks from the CSS to be graphed
