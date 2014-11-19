@@ -9,13 +9,13 @@ Want a demo? [Here you go](https://vincefalconi.com/demo/css-specificity-graph/)
 ## Requirements
 
 1. PHP
-2. Some CSS (minified or nah) that you want to analyze
+2. Some CSS that you want to analyze (minified or not)
 
 ## How To
 
 1. Download and unzip this repo
 2. Plug your CSS into styles.min.css
-3. Open `index.html` in a browser
+3. Open `index.php` in a browser
 
 ## Notes
 
